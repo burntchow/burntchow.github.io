@@ -1,0 +1,23 @@
+/* .centered {
+    background: #888;
+    margin: 0 auto;
+    width: 50%;
+} */
+main {
+    min-height: 100vh;
+    display: block;
+}
+
+@media (min-width: 400px) {
+    .wrapper {
+        --page-margin: var(var(--page-margin-mid));
+    }
+}
+
+@media (min-width: 800px) {
+    .intro .intro-header {
+      /*order: 4; */
+      position: absolute; 
+      bottom: var(--page-margin);
+    }
+  }
