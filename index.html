@@ -9,51 +9,27 @@
     </head>
 
     <body>
-
-        <main class="wrapper">
-
-
-            <article class="intro">
-
-
-                <!--Bottom Navigation Bar-->
-                <header class = "intro-header">
-                    <nav class = "intro-header_nav">
-                        <ul>
-                            <li><a href="./projects">Projects</a></li>
-                            <li><a href="./write">Write</a></li>
-                            <li><a href="https://www.linkedin.com/in/aveline-villaganas/">Linkedin</a></li>
-                            <li><a href="https://github.com/burntchow?tab=repositories">Github</a></li> 
-                        </ul>
-                    </nav>
-                </header>
-
-                <!--Introduction-->
-                <header class="intro__header">
-                    <h1>
-                        <!-- Greetings traveler,  -->
-                        <strong>I'm Aveline Villaganas</strong>
-                    </h1> 
-                    <h2 title="toadstool">/aw-vey-leen vill-ya-gone-us</h2>
-                </header>
-
-                <section class="intro-content">
-
-                    <h2>
-                        I'm an aspiring computer <b>programmer</b>. 
-                    </h2>
-                    <p>
-                        I recently graduated from Cal State Long Beach with a B.S. in Computer Science.
-                    </p>
-                    <p>
-                        I enjoy reading different genres, and learning more about developing technologies like machine learning and its applications. 
-                    </p>
-                </section>
-
-            </article>
-  
-            <!--Introduction Section-->
-  
-        </main>
+        <div class="desktop">
+            <div class="name">Aveline Villaganas</div>
+            <div class="folders">
+                <div class="folder" onclick="openFolder('About')">
+                    <img src="folder-icon.png" alt="About">
+                    <span>About</span>
+                </div>
+                <div class="folder" onclick="openFolder('Projects')">
+                    <img src="folder-icon.png" alt="Projects">
+                    <span>Projects</span>
+                </div>
+                <div class="folder" onclick="openFolder('GitHub')">
+                    <img src="github-icon.png" alt="GitHub">
+                    <span>GitHub</span>
+                </div>
+                <div class="folder" onclick="openFolder('LinkedIn')">
+                    <img src="linkedin-icon.png" alt="LinkedIn">
+                    <span>LinkedIn</span>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
     </body>
 </html>
