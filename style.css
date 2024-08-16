@@ -197,3 +197,18 @@ body, html {
     margin-right: 5px;  
 }
 
+
+
+
+#book-container {
+    position: fixed;
+    bottom: -100%; /* Initially hidden */
+    left: 50%;
+    transform: translateX(-50%);
+    transition: bottom 0.5s ease-in-out;
+    z-index: 1;
+}
+
+#book-image {
+    width: 520px; /* Adjust size as needed */
+}

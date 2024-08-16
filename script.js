@@ -15,7 +15,32 @@ function openFolder(folderName) {
     }
 } 
 
+function slideBookRec() {
+    const bookContainer = document.getElementById('book-container');
+    const bookImage = document.getElementById('book-image');
+    
+    // Toggle visibility
+    if (bookContainer.style.bottom === '0px') {
+        bookContainer.style.bottom = '-100%'; // Slide back down
+    } else {
+        bookContainer.style.bottom = '0'; // Slide up
+        // Add a click event listener to the document to hide the image when clicking outside
+        document.addEventListener('click', outsideClickListener);
+    }
+    
+    function outsideClickListener(event) {
+        if (!bookContainer.contains(event.target) && !event.target.closest('.folder')) {
+            bookContainer.style.bottom = '-100%'; // Slide back down
+            document.removeEventListener('click', outsideClickListener);
+        }
+    }
+}
+
 window.onload = function() {
+
+    const bookContainer = document.getElementById('book-container');
+    bookContainer.style.bottom = '-100%';
+
     const img = document.getElementById('logo');
     const container = document.getElementById('container'); 
     const scoreElement = document.getElementById('score');
