@@ -9,33 +9,50 @@
     </head>
 
     <body>
-        <div class="navbar">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="projects.html">Projects</a>
-            <a href="https://github.com/burntchow" target="_blank">GitHub</a>
-            <a href="https://www.linkedin.com/in/aveline-villaganas/" target="_blank">LinkedIn</a>
-        </div>
+        
         <div class="desktop">
-            <div class="name">Aveline Villaganas</div>
+            <div id="container">
+                <div id="score">Score: 0</div>
+                <img id="logo" src="Umber-Icon.png" alt="Logo">
+            </div>
+    
+            <div class="name">Hi my name is <br> <b>Aveline Villaganas</b> <br>and I like to code.</div> 
+          
+
             <div class="folders">
                 <div class="folder" onclick="openFolder('About')">
                     <img src="folder-icon.png" alt="About">
                     <span>About</span>
                 </div>
+
                 <div class="folder" onclick="openFolder('Projects')">
                     <img src="folder-icon.png" alt="Projects">
                     <span>Projects</span>
-                </div>
+                </div> 
+
+                <div class="folder" onclick="openFolder('Projects')">
+                    <img src="document-icon.png" alt="Books">
+                    <span>Books</span>
+                </div> 
+
                 <div class="folder" onclick="openFolder('GitHub')">
                     <img src="github-icon.png" alt="GitHub">
                     <span>GitHub</span>
                 </div>
+
                 <div class="folder" onclick="openFolder('LinkedIn')">
                     <img src="linkedin-icon.png" alt="LinkedIn">
                     <span>LinkedIn</span>
                 </div>
-            </div>
+
+                
+            </div> 
+
+            
+        </div>
+
+        <div id="image-container"> <!--Filler temp-->
+            <img src="Umber-Icon.png" alt="Sliding Image" id="slide-image">
         </div>
         <script src="script.js"></script>
     </body>
